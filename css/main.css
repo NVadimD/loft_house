@@ -109,10 +109,17 @@ a:hover {
 }
 
 .container {
-  width: 1140px;
+  max-width: 1140px;
   height: 100%;
   padding: 0 15px;
   margin: 0 auto;
+}
+.container--small {
+  max-width: 840px;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .header {
@@ -153,4 +160,78 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   gap: 40px;
+}
+
+.header_title {
+  text-align: center;
+  font-size: 48px;
+  color: #D4C17F;
+  font-family: "Playfair Display", serif;
+}
+
+.mouse_box {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.header_bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 98px;
+}
+
+.info {
+  font-size: 18px;
+  position: relative;
+}
+.info--map, .info--phone {
+  padding-left: 35px;
+}
+.info--map::before, .info--phone::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 21px;
+  height: 21px;
+  background-repeat: no-repeat;
+}
+.info--map::before {
+  background-image: url("../../img/header/map.svg");
+}
+.info--phone::before {
+  background-image: url("../../img/header/phone.svg");
+}
+
+.benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 70px;
+  padding: 120px 0;
+}
+
+.benefits__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 53px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item_text {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.35;
 }

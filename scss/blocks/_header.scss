@@ -30,3 +30,21 @@
         gap: 40px;
     }
 }
+
+.header_title {
+    text-align: center;
+    font-size: 48px;
+    color: $accent;
+    font-family: $font-accent;
+}
+
+.mouse_box {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.header_bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 98px;
+}
