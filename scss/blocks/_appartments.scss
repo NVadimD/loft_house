@@ -1,10 +1,14 @@
 .appartments__cards {
     margin-top: 88px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
 }
 
 .card__item {
     position: relative;
     display: inline-block;
+    overflow: hidden;
 
     &::before {
         content: "";
@@ -14,11 +18,52 @@
         width: 100%;
         height: 100%;
 
-        background: linear-gradient(
-                180deg,
-                rgba(36, 43, 51, 0) 0%,
-                #242b33 100%
-            ),
-            url(<path-to-image>), lightgray 50% / cover no-repeat, #d4c17f;
+        background: linear-gradient(180deg, rgba(36, 43, 51, 0.00) 0%, $dark 100%);
+        z-index: 6;        
     }
+
+
+    &::after {
+        content: "";
+        opacity: 0;
+        transition: opacity 0.3s ease-in;
+
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        right: 15px;
+        bottom: 15px;
+
+        border: 3px double rgba($color: #ffffff, $alpha: 0.4);
+        z-index: 7;
+    }
+
+    &:hover::after {
+        opacity: 1;
+    }
+
+    &:hover .card__title {
+        color: $accent;
+    }
+
+    &:hover .card__img {
+        scale: 1.1;
+    }
+}
+
+.card__title {
+    transition: color 0.2s ease-in;
+    color: $white;
+    position: absolute;
+    left: 50px;
+    right: 20px;
+    bottom: 44px;
+    font-size: 24px;
+    z-index: 7;
+}
+
+.card__img {
+    transition: all 0.3s ease-in;
+    position: relative;
+    z-index: 5;
 }
