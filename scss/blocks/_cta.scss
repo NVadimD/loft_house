@@ -1,0 +1,38 @@
+.cta__field {
+    min-height: 560px;
+    background:
+            linear-gradient(
+            180deg,
+            $dark 10.42%,
+            rgba(36, 43, 51, 0) 50.52%,
+            $dark 90.1%
+        ),
+        linear-gradient(
+            0deg,
+            rgba(36, 43, 51, 0.9) 0%,
+            rgba(36, 43, 51, 0.9) 100%
+        ),
+        url('../img/cta/cta_bg.jpg'),
+        lightgray 50% / cover no-repeat;
+
+    padding: 180px 0;
+    position: relative;
+}
+
+.cta__content {
+    display: flex;
+    gap: 30px;
+    margin-top: 17px;
+}
+
+.cta__text {
+    width: 50%;
+    line-height: 1.5;
+}
+
+.cta__form {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px 30px;
+}
