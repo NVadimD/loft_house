@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="./css/main.css" />
     </head>
     <body>
-        <header class="header invisible">
+        <header class="header">
             <div class="container">
                 <div class="header_content">
                     <div class="header_top">
@@ -52,7 +52,7 @@
             </div>
         </header>
         <main class="main">
-            <div class="container container--small invisible">
+            <div class="container container--small">
                 <section class="benefits">
                     <div class="benefits__item">
                         <img src="./img/benefits/bench.svg" alt="bench" />
@@ -75,7 +75,7 @@
                 </section>
             </div>
             <div class="container">
-                <section class="appartments invisible">
+                <section class="appartments">
                     <h2 class="appartments__title secondary_title">
                         Наши квартиры
                     </h2>
@@ -145,13 +145,107 @@
                                 *Мы никому не передаем ваши данные. И не
                                 сохраняем ваш номер в базу.
                             </p>
-                            <button class="form__btn">
-                                Посмотреть район
-                            </button>
+                            <button class="form__btn">Посмотреть район</button>
                         </form>
                     </div>
                 </div>
             </section>
+            <div class="container">
+                <section class="video">
+                    <a
+                        href="https://www.youtube.com/watch?v=bhJNL9JUsnY"
+                        class="video__card"
+                    >
+                        <img
+                            src="./img/video/video_bg.jpg"
+                            alt="video"
+                            class="card__bg"
+                        />
+                        <img
+                            src="./img/video/play.svg"
+                            alt="play"
+                            class="play_ico"
+                        />
+                    </a>
+                </section>
+                <section class="section_map">
+                    <h2 class="section_map__title secondary_title">
+                        Район на карте
+                    </h2>
+                    <div class="section_map__map">
+                        <div class="map" id="map"></div>
+                    </div>
+                </section>
+                <section class="feedback">
+                    <div class="feedback__title secondary_title">
+                        Есть вопросы?
+                    </div>
+                    <form class="feedback__form form">
+                        <p class="form__privacy">
+                            *Мы никому не передаем ваши данные. И не сохраняем ваш
+                            номер в базу.
+                        </p>
+                        <input
+                            type="text"
+                            class="form__input"
+                            placeholder="Ваше имя"
+                        />
+                        <input
+                            type="text"
+                            class="form__input"
+                            placeholder="Ваш телефон"
+                        />
+                        <button class="form__btn">Посмотреть район</button>
+                    </form>
+                </section>
+            </div>
         </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer__logo">
+                        <a href="#!">
+                            <img src="./img/logo.svg" alt="Loft Hiuse" />
+                        </a>
+                    </div>
+                    <div class="footer__nav">
+                        <nav>
+                            <ul class="footer__nav-list">
+                                <li><a href="#!">О комплексе</a></li>
+                                <li><a href="#!">Район</a></li>
+                                <li><a href="#!">Каталог квартир</a></li>
+                                <li><a href="#!">Ипотека</a></li>
+                                <li><a href="#!">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__nav">
+                        <nav>
+                            <ul class="footer__nav-list">
+                                <li><a href="#!">Поселение и переезд</a></li>
+                                <li><a href="#!">Сервисные услуги</a></li>
+                                <li><a href="#!">Экологическая устойчивость</a></li>
+                                <li><a href="#!">Инвестиционные возможности</a></li>
+                                <li><a href="#!">Программа лояльности </a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__address">
+                        <ul class="footer__nav-list">
+                            <li>Адрес: Наб. реки Фонтанки 10-15</li>
+                            <li>Телефон: 8 (812) 123-45-67</li>
+                            <li>Отдел продаж: 10:00 - 20:00</li>
+                            <li>E-mail: vip@lofthouse.ru</li>
+                        </ul>
+                        <ul class="socials">
+                            <li><a href="#!"><img src="./img/socials/youtube.svg" alt="youtube"></a></li>
+                            <li><a href="#!"><img src="./img/socials/vk.svg" alt="vk"></a></li>
+                            <li><a href="#!"><img src="./img/socials/facebook.svg" alt="facebook"></a></li>
+                            <li><a href="#!"><img src="./img/socials/instagram.svg" alt="instagram"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

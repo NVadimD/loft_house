@@ -170,6 +170,7 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   gap: 40px;
+  letter-spacing: 0.05rem;
 }
 
 .header_title {
@@ -371,7 +372,7 @@ a:hover {
 .form__privacy {
   font-size: 13px;
   line-height: 1.23;
-  color: rgba(231, 231, 231, 0.9333333333);
+  color: rgba(231, 231, 231, 0.737254902);
   text-align: center;
 }
 
@@ -386,4 +387,105 @@ a:hover {
 }
 .form__btn:hover {
   background: #dec775;
+}
+
+.video {
+  text-align: center;
+}
+
+.video__card {
+  position: relative;
+  display: inline-block;
+}
+.video__card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(36, 43, 51, 0.8);
+  -webkit-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
+}
+.video__card:hover::before {
+  background: rgba(36, 43, 51, 0.7);
+}
+.video__card:hover .play_ico {
+  -webkit-transform: translate(-50%, -50%) scale(1.2);
+      -ms-transform: translate(-50%, -50%) scale(1.2);
+          transform: translate(-50%, -50%) scale(1.2);
+  -webkit-filter: saturate(1.5);
+          filter: saturate(1.5);
+}
+
+.play_ico {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.section_map {
+  padding: 180px 0;
+}
+
+.section_map__title {
+  margin-bottom: 88px;
+}
+
+.map {
+  background: #626262;
+  height: 358px;
+}
+
+.feedback {
+  margin-bottom: 180px;
+}
+
+.feedback__form {
+  margin-top: 38px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.footer {
+  background: #2D343C;
+  padding: 72px 0 51px;
+  font-size: 14px;
+  letter-spacing: 0.05rem;
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.footer__logo {
+  margin-top: -12px;
+}
+
+.footer__nav-list {
+  display: grid;
+  gap: 15px;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 22px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 18px;
 }
