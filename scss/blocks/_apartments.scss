@@ -1,4 +1,17 @@
-.appartments__cards {
+.apartments {
+    position: relative;
+
+    &::after {
+        content: 'III';
+        top: -68px;
+        left: 0;
+        transform: translate(-50%, 0);
+
+        @include decorNumber;
+    }
+}
+
+.apartments__cards {
     margin-top: 88px;
     display: grid;
     grid-template-columns: 1fr 1fr;

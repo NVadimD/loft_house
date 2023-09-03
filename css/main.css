@@ -97,6 +97,8 @@ body {
   font-size: 16px;
   background-color: #242B33;
   color: #fff;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .invisible {
@@ -223,6 +225,19 @@ a:hover {
           justify-content: space-between;
   gap: 70px;
   padding: 120px 0;
+  position: relative;
+}
+.benefits::after {
+  content: "II";
+  top: -20px;
+  right: -158px;
+  -webkit-transform: translate(50%, 0);
+      -ms-transform: translate(50%, 0);
+          transform: translate(50%, 0);
+  position: absolute;
+  font-family: "Playfair Display", serif;
+  opacity: 0.02;
+  font-size: 400px;
 }
 
 .benefits__item {
@@ -247,7 +262,23 @@ a:hover {
   line-height: 1.35;
 }
 
-.appartments__cards {
+.apartments {
+  position: relative;
+}
+.apartments::after {
+  content: "III";
+  top: -68px;
+  left: 0;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  position: absolute;
+  font-family: "Playfair Display", serif;
+  opacity: 0.02;
+  font-size: 400px;
+}
+
+.apartments__cards {
   margin-top: 88px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -391,6 +422,19 @@ a:hover {
 
 .video {
   text-align: center;
+  position: relative;
+}
+.video::after {
+  content: "IV";
+  top: 40px;
+  right: 0;
+  -webkit-transform: translate(50%, 0);
+      -ms-transform: translate(50%, 0);
+          transform: translate(50%, 0);
+  position: absolute;
+  font-family: "Playfair Display", serif;
+  opacity: 0.02;
+  font-size: 400px;
 }
 
 .video__card {
@@ -432,6 +476,20 @@ a:hover {
 
 .section_map {
   padding: 180px 0;
+  position: relative;
+}
+.section_map::after {
+  content: "V";
+  top: 116px;
+  left: 0;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  z-index: -2;
+  position: absolute;
+  font-family: "Playfair Display", serif;
+  opacity: 0.02;
+  font-size: 400px;
 }
 
 .section_map__title {
