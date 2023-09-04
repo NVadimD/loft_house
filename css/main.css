@@ -133,6 +133,11 @@ a:hover {
   color: #D4C17F;
   font-family: "Playfair Display", serif;
 }
+@media screen and (width < 1000px) {
+  .secondary_title {
+    font-size: 26px;
+  }
+}
 
 .no-scroll {
   overflow-y: hidden;
@@ -402,6 +407,18 @@ a:hover {
   opacity: 0.02;
   font-size: 400px;
 }
+@media screen and (width < 1000px) {
+  .benefits::after {
+    display: none;
+  }
+}
+@media screen and (width < 1000px) {
+  .benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 40px 30px;
+  }
+}
 
 .benefits__item {
   display: -webkit-box;
@@ -416,6 +433,18 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (width < 1000px) {
+  .benefits__item {
+    gap: 20px;
+  }
+}
+
+@media screen and (width < 1000px) {
+  .item__img {
+    width: 60px;
+    height: 60px;
+  }
+}
 
 .item_text {
   font-size: 20px;
@@ -423,6 +452,11 @@ a:hover {
   font-weight: 300;
   text-align: center;
   line-height: 1.35;
+}
+@media screen and (width < 1000px) {
+  .item_text {
+    font-size: 16px;
+  }
 }
 
 .apartments {
@@ -440,12 +474,23 @@ a:hover {
   opacity: 0.02;
   font-size: 400px;
 }
+@media screen and (width < 1000px) {
+  .apartments::after {
+    display: none;
+  }
+}
 
 .apartments__cards {
   margin-top: 88px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+}
+@media screen and (width < 1000px) {
+  .apartments__cards {
+    margin-top: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(297px, 1fr));
+  }
 }
 
 .card__item {
@@ -498,6 +543,13 @@ a:hover {
   font-size: 24px;
   z-index: 7;
 }
+@media screen and (width < 1000px) {
+  .card__title {
+    font-size: 16px;
+    bottom: 28px;
+    left: 28px;
+  }
+}
 
 .card__img {
   -webkit-transition: all 0.3s ease-in;
@@ -513,25 +565,47 @@ a:hover {
   padding: 180px 0;
   position: relative;
 }
+@media screen and (width < 1000px) {
+  .cta__field {
+    padding: 60px 0;
+  }
+}
 
 .cta__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
+  gap: 40px;
   margin-top: 17px;
+}
+@media screen and (width < 1000px) {
+  .cta__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 50px;
+  }
 }
 
 .cta__text {
-  width: 50%;
   line-height: 1.5;
+}
+@media screen and (width < 1000px) {
+  .cta__text {
+    font-size: 14px;
+  }
 }
 
 .cta__form {
-  width: 50%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 35px 30px;
+}
+@media screen and (width < 1000px) {
+  .cta__form {
+    grid-template-columns: 1fr;
+  }
 }
 
 .form__input {
@@ -599,6 +673,11 @@ a:hover {
   opacity: 0.02;
   font-size: 400px;
 }
+@media screen and (width < 1000px) {
+  .video::after {
+    display: none;
+  }
+}
 
 .video__card {
   position: relative;
@@ -654,9 +733,24 @@ a:hover {
   opacity: 0.02;
   font-size: 400px;
 }
+@media screen and (width < 1000px) {
+  .section_map::after {
+    display: none;
+  }
+}
+@media screen and (width < 1000px) {
+  .section_map {
+    padding: 60px 0;
+  }
+}
 
 .section_map__title {
   margin-bottom: 88px;
+}
+@media screen and (width < 1000px) {
+  .section_map__title {
+    margin-bottom: 40px;
+  }
 }
 
 .map {
@@ -666,6 +760,11 @@ a:hover {
 
 .feedback {
   margin-bottom: 180px;
+}
+@media screen and (width < 1000px) {
+  .feedback {
+    margin-bottom: 80px;
+  }
 }
 
 .feedback__form {
@@ -677,6 +776,11 @@ a:hover {
           align-items: center;
   gap: 30px;
 }
+@media screen and (width < 1000px) {
+  .feedback__form {
+    grid-template-columns: 1fr;
+  }
+}
 
 .footer {
   background: #2D343C;
@@ -684,11 +788,22 @@ a:hover {
   font-size: 14px;
   letter-spacing: 0.05rem;
 }
+@media screen and (width < 1000px) {
+  .footer {
+    padding: 36px 0 26px;
+  }
+}
 
 .footer__content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+}
+@media screen and (width < 1000px) {
+  .footer__content {
+    grid-template-columns: repeat(auto-fit, minmax(297px, 1fr));
+    gap: 40px 30px;
+  }
 }
 
 .footer__logo {

@@ -46,6 +46,10 @@ a {
     font-size: 36px;
     color: $accent;
     font-family: $font-accent;
+
+    @include mediaTablet {
+        font-size: 26px;
+    }
 }
 
 .no-scroll {

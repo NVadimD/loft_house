@@ -1,5 +1,9 @@
 .feedback {
     margin-bottom: 180px;
+
+    @include mediaTablet {
+        margin-bottom: 80px;
+    }
 }
 
 .feedback__form {
@@ -8,4 +12,8 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     gap: 30px;
+
+    @include mediaTablet {
+        grid-template-columns: 1fr;
+    }
 }

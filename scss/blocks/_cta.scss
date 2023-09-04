@@ -17,22 +17,39 @@
 
     padding: 180px 0;
     position: relative;
+
+    @include mediaTablet {
+        padding: 60px 0;
+    }
 }
 
 .cta__content {
     display: flex;
-    gap: 30px;
+    gap: 40px;
     margin-top: 17px;
+
+    @include mediaTablet {
+        flex-direction: column;
+        gap: 50px;
+    }
 }
 
 .cta__text {
-    width: 50%;
+    // width: 50%;
     line-height: 1.5;
+
+    @include mediaTablet {
+        font-size: 14px;
+    }
 }
 
 .cta__form {
-    width: 50%;
+    // width: 50%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 35px 30px;
+
+    @include mediaTablet {
+        grid-template-columns: 1fr;
+    }
 }
