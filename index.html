@@ -5,15 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>LoftHouse</title>
         <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./libs/youtubeLightbox.css">
         <script src="./js/main.js" defer></script>
     </head>
     <body>
         <header class="header">
             <div class="container">
                 <div class="header_content">
-
                     <div class="header_top">
-
                         <a href="#!">
                             <img src="./img/logo.svg" alt="Loft Hiuse" />
                         </a>
@@ -30,12 +29,9 @@
 
                         <div class="header__nav-btn">
                             <button class="nav-icon-btn">
-                                <div class="nav-icon">
-
-                                </div>
+                                <div class="nav-icon"></div>
                             </button>
                         </div>
-
                     </div>
                     <div class="header_center">
                         <h1 class="header_title">
@@ -68,21 +64,37 @@
             <div class="container container--small">
                 <section class="benefits">
                     <div class="benefits__item">
-                        <img src="./img/benefits/bench.svg" alt="bench" class="item__img" />
+                        <img
+                            src="./img/benefits/bench.svg"
+                            alt="bench"
+                            class="item__img"
+                        />
                         <div class="item_text">
                             Рядом исторические парки и скверы
                         </div>
                     </div>
                     <div class="benefits__item">
-                        <img src="./img/benefits/building.svg" alt="building" class="item__img" />
+                        <img
+                            src="./img/benefits/building.svg"
+                            alt="building"
+                            class="item__img"
+                        />
                         <div class="item_text">Полностью обустроенный</div>
                     </div>
                     <div class="benefits__item">
-                        <img src="./img/benefits/fountain.svg" alt="fountain" class="item__img" />
+                        <img
+                            src="./img/benefits/fountain.svg"
+                            alt="fountain"
+                            class="item__img"
+                        />
                         <div class="item_text">10 фонтанов на территории</div>
                     </div>
                     <div class="benefits__item">
-                        <img src="./img/benefits/bicycle.svg" alt="bicycle" class="item__img" />
+                        <img
+                            src="./img/benefits/bicycle.svg"
+                            alt="bicycle"
+                            class="item__img"
+                        />
                         <div class="item_text">6 км велодорожек</div>
                     </div>
                 </section>
@@ -150,6 +162,7 @@
                                 placeholder="Ваше имя"
                             />
                             <input
+                                data-tel-input
                                 type="text"
                                 class="form__input"
                                 placeholder="Ваш телефон"
@@ -166,6 +179,7 @@
             <div class="container">
                 <section class="video">
                     <a
+                        data-youtubeLightbox
                         href="https://www.youtube.com/watch?v=bhJNL9JUsnY"
                         class="video__card"
                     >
@@ -195,8 +209,8 @@
                     </div>
                     <form class="feedback__form form">
                         <p class="form__privacy">
-                            *Мы никому не передаем ваши данные. И не сохраняем ваш
-                            номер в базу.
+                            *Мы никому не передаем ваши данные. И не сохраняем
+                            ваш номер в базу.
                         </p>
                         <input
                             type="text"
@@ -204,6 +218,7 @@
                             placeholder="Ваше имя"
                         />
                         <input
+                            data-tel-input
                             type="text"
                             class="form__input"
                             placeholder="Ваш телефон"
@@ -237,8 +252,12 @@
                             <ul class="footer__nav-list">
                                 <li><a href="#!">Поселение и переезд</a></li>
                                 <li><a href="#!">Сервисные услуги</a></li>
-                                <li><a href="#!">Экологическая устойчивость</a></li>
-                                <li><a href="#!">Инвестиционные возможности</a></li>
+                                <li>
+                                    <a href="#!">Экологическая устойчивость</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Инвестиционные возможности</a>
+                                </li>
                                 <li><a href="#!">Программа лояльности </a></li>
                             </ul>
                         </nav>
@@ -251,14 +270,53 @@
                             <li>E-mail: vip@lofthouse.ru</li>
                         </ul>
                         <ul class="socials">
-                            <li><a href="#!"><img src="./img/socials/youtube.svg" alt="youtube"></a></li>
-                            <li><a href="#!"><img src="./img/socials/vk.svg" alt="vk"></a></li>
-                            <li><a href="#!"><img src="./img/socials/facebook.svg" alt="facebook"></a></li>
-                            <li><a href="#!"><img src="./img/socials/instagram.svg" alt="instagram"></a></li>
+                            <li>
+                                <a href="#!"
+                                    ><img
+                                        src="./img/socials/youtube.svg"
+                                        alt="youtube"
+                                /></a>
+                            </li>
+                            <li>
+                                <a href="#!"
+                                    ><img src="./img/socials/vk.svg" alt="vk"
+                                /></a>
+                            </li>
+                            <li>
+                                <a href="#!"
+                                    ><img
+                                        src="./img/socials/facebook.svg"
+                                        alt="facebook"
+                                /></a>
+                            </li>
+                            <li>
+                                <a href="#!"
+                                    ><img
+                                        src="./img/socials/instagram.svg"
+                                        alt="instagram"
+                                /></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </footer>
+
+        <!-- YouTube LightBox -->
+        <div id="youtubelightbox" class="youtubelightbox">
+            <div class="youtubelightbox__centeredchild">
+                <div class="youtubelightbox__videowrapper">
+                    <div id="youtubelightboxPlayer"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=4f537583-9ef9-4998-a98b-9a6ee160a9d3&lang=ru_RU" type="text/javascript"></script>
+
+        <script src="./libs/mask.js"></script>
+        <script src="./libs/mask_list.js"></script>
+
+        <script src="./libs/youtubeLightbox.js"></script>
+
     </body>
 </html>
