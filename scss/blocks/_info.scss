@@ -3,7 +3,7 @@
     position: relative;
 
     &--map, &--phone {
-        padding-left: 35px;
+        padding-left: 30px;
 
         &::before {
             content: "";
@@ -23,5 +23,9 @@
     }
     &--phone::before {
         background-image: url('../img/header/phone.svg');
+    }
+
+    @include mediaTablet {
+        font-size: 16px;
     }
 }

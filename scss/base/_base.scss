@@ -28,9 +28,9 @@ a {
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 1160px;
     height: 100%;
-    padding: 0 15px;
+    padding: 0 25px;
     margin: 0 auto;
 
     &--small {
@@ -46,4 +46,8 @@ a {
     font-size: 36px;
     color: $accent;
     font-family: $font-accent;
+}
+
+.no-scroll {
+    overflow-y: hidden;
 }
